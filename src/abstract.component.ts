@@ -118,6 +118,7 @@ export abstract class AbstractComponent {
         };
         this._elem.ondrop = (event: Event) => {
             this._onDrop(event);
+            this._onDragEnd(event);
         };
         //
         // Drag events
